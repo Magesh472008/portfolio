@@ -1,0 +1,207 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Hero Section */
+.hero-section header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #e3f2fd;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  color: #0d47a1;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Navigation */
+nav {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1976d2;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #0d47a1;
+}
+
+/* Sections */
+section {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  color: #1976d2;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#home {
+  text-align: center;
+}
+
+#home img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+#home h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.button {
+  background-color: #1976d2;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background-color: #0d47a1;
+}
+
+/* About */
+#about p {
+  text-align: justify;
+  color: #444;
+  font-size: 1rem;
+}
+
+/* Skills */
+.skill {
+  margin-bottom: 1.5rem;
+}
+
+.skill span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.progress {
+  background: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: #1976d2;
+  height: 100%;
+  width: 0;
+  animation: fillBar 2s forwards;
+  border-radius: 10px;
+}
+
+/* Animate progress bar using CSS variable */
+.progress-bar[style] {
+  animation-name: fillBar;
+}
+
+@keyframes fillBar {
+  100% {
+    width: var(--target-width);
+  }
+}
+
+/* Contact */
+#contact p, #contact a {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+#contact a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+form table {
+  width: 100%;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+form button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.6rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0d47a1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background: #646464;
+  color: #e3f2fd;
+  border-radius: 10px;
+
+}
